@@ -40,3 +40,16 @@
   color: #00bfa6;
   margin-bottom: 5px;
 }
+
+.custom-btn {
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: 600;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.custom-btn:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
