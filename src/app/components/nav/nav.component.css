@@ -1,0 +1,12 @@
+.titulo-brillante {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #fff;
+  animation: brillo 2s infinite;
+  padding-left: 20px;
+}
+
+@keyframes brillo {
+  0%, 100% { text-shadow: 0 0 10px rgb(4, 0, 255), 0 0 20px rgb(146, 177, 235); }
+  50% { text-shadow: 0 0 5px rgb(30, 0, 255), 0 0 10px rgb(206, 235, 100); }
+}

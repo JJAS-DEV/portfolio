@@ -1,0 +1,42 @@
+.sobre-mi-container {
+  perspective: 800px;             /* Define la “distancia” del plano 3D */
+}
+
+.sobre-mi-texto {
+  color: #ccc;
+  line-height: 1.6;
+  border-radius: 4px;
+  transition: transform 0.3s ease, color 0.3s ease;
+  transform-style: preserve-3d;   /* Necesario para transformaciones 3D */
+}
+
+.sobre-mi-texto:hover {
+  color: #fff;                    /* Opcional: resalta el color del texto */
+  transform: translateZ(20px);    /* Sacude el elemento hacia el frente */
+}
+
+.mono-title {
+  font-family: 'Courier New', monospace;
+  font-size: 2rem;
+  color: #00bfa6;
+  background-color: #1e1e1e;
+  padding: 10px 20px;
+  border-left: 4px solid #00bfa6;
+  box-shadow: 0 0 5px rgba(0, 191, 166, 0.2);
+}
+
+.row .col-md-2 {
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  padding: 10px;
+  transition: transform 0.2s ease;
+}
+
+.row .col-md-2:hover {
+  transform: scale(1.05);
+}
+
+ i {
+  color: #00bfa6;
+  margin-bottom: 5px;
+}
