@@ -1,5 +1,6 @@
 .sobre-mi-container {
-  perspective: 800px;             /* Define la “distancia” del plano 3D */
+  perspective: 800px;
+  /* Define la “distancia” del plano 3D */
 }
 
 .sobre-mi-texto {
@@ -7,12 +8,15 @@
   line-height: 1.6;
   border-radius: 4px;
   transition: transform 0.3s ease, color 0.3s ease;
-  transform-style: preserve-3d;   /* Necesario para transformaciones 3D */
+  transform-style: preserve-3d;
+  /* Necesario para transformaciones 3D */
 }
 
 .sobre-mi-texto:hover {
-  color: #fff;                    /* Opcional: resalta el color del texto */
-  transform: translateZ(20px);    /* Sacude el elemento hacia el frente */
+  color: #fff;
+  /* Opcional: resalta el color del texto */
+  transform: translateZ(20px);
+  /* Sacude el elemento hacia el frente */
 }
 
 .mono-title {
@@ -29,6 +33,8 @@
   background-color: #1e1e1e;
   border-radius: 8px;
   padding: 10px;
+  width: 150px;
+  margin: 3px;
   transition: transform 0.2s ease;
 }
 
@@ -36,7 +42,7 @@
   transform: scale(1.05);
 }
 
- i {
+i {
   color: #00bfa6;
   margin-bottom: 5px;
 }
@@ -53,5 +59,16 @@
   transform: scale(1.05);
 }
 
-.margen{
+.sepacionnav {
+  padding-top: 100px;
+  /* La altura de tu nav */
+  margin-top: 100px;
+}
+
+.card-brillante {
+  background-color: rgba(255, 255, 255, 0.05); /* fondo translúcido oscuro */
+  border-left: 6px solid #00bfa6;              /* cinta turquesa */
+  border-radius: 8px;
+     box-shadow: 0 0 5px #00ffc3;
+ 
 }

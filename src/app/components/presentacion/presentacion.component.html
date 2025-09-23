@@ -1,105 +1,210 @@
 <body class="bg-dark text-light margen p-3">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<h1 style="height: 90px;  overflow: hidden;
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <h1 style="height: 90px;  overflow: hidden;
 " id="jonathanAyona"></h1>
-    <div class="container my-2"  >
-  <div class="row align-items-center">
-    <!-- Columna izquierda: Texto -->
-    <div class="col-md-6">
-      <div class="sobre-mi-texto">
+  <div class="container my-2">
+    <div class="row align-items-center">
+      <!-- Columna izquierda: Texto -->
+      <div class="col-md-6">
+        <div class="sobre-mi-texto">
 
-        <h2 class="mono-title">Jonathan Ayona</h2>
-      </div>
-      <div class="sobre-mi-container">
+          <h2 class="mono-title">Jonathan Ayona</h2>
+        </div>
+        <div class="sobre-mi-container">
 
           <p class="sobre-mi-texto">
-    Desarrollador Full Stack con enfoque backend, resiliente y autodidacta, en transición activa hacia roles IT. Ingeniero de
-    Sistemas. Experiencia en desarrollo de APIs REST con Java y Spring Boot, incluyendo autenticación y autorización con
-    Spring Security y JWT. Integración de frontend funcional con Angular y JavaScript, y manejo de bases de datos relacionales
-    (MySQL, PostgreSQL). Capacidad para resolver problemas técnicos (Maven, configuración de proyectos, despliegue de
-    microservicios), y aprendizaje adaptativo enfocado en buenas prácticas y arquitectura de sistemas. 
+            Desarrollador Full Stack con enfoque backend, resiliente y autodidacta, en transición activa hacia roles IT.
+            Ingeniero de
+            Sistemas. Experiencia en desarrollo de APIs REST con Java y Spring Boot, incluyendo autenticación y
+            autorización con
+            Spring Security y JWT. Integración de frontend funcional con Angular y JavaScript, y manejo de bases de
+            datos relacionales
+            (MySQL, PostgreSQL). Capacidad para resolver problemas técnicos (Maven, configuración de proyectos,
+            despliegue de
+            microservicios), y aprendizaje adaptativo enfocado en buenas prácticas y arquitectura de sistemas.
+        </div>
+        <a href="pdfs/curriculum/CurriculumJonathanAyonaActualizado.pdf" download
+          class="btn btn-success btn-lg mt-3 custom-btn">
+          <i class="fas fa-download"></i> Descargar CV
+        </a>
+
+
+
+
       </div>
-<a href="pdfs/curriculum/CurriculumJonathanAyonaActualizado.pdf" download class="btn btn-success btn-lg mt-3 custom-btn">
-  <i class="fas fa-download"></i> Descargar CV
-</a>
 
+      <!-- Columna derecha: Imagen -->
+      <div class="sobre-mi-container col-md-6 text-center">
+        <img src="img/jonathan_ayona.png" alt="Foto de Jonathan" class="img-fluid rounded-circle shadow sobre-mi-texto"
+          style="max-width: 400px;">
+      </div>
+    </div>
+
+
+    <div id="Skills" class="my-4 sepacionnav">
+
+      <div class="text-center">
+        <h2 class="mono-title mb-4">Stack Tecnológico</h2>
+
+        <div class="row justify-content-center">
+          <div class="col-6 col-md-2 mb-3">
+            <i class="fab fa-java fa-2x"></i><br>Java
+          </div>
+          <div class="col-6 col-md-2 mb-3">
+            <i class="fab fa-js fa-2x"></i><br>JavaScript
+          </div>
+          <div class="col-6 col-md-2 mb-3">
+            <i class="fas fa-code fa-2x"></i><br>TypeScript
+          </div>
+          <div class="col-6 col-md-2 mb-3">
+            <i class="fab fa-angular fa-2x"></i><br>Angular
+          </div>
+          <div class="col-6 col-md-2 mb-3">
+            <i class="fas fa-database fa-2x"></i><br>MySQL
+          </div>
+          <div class="col-6 col-md-2 mb-3">
+            <i class="fab fa-git-alt fa-2x"></i><br>Git
+          </div>
+          <div class="col-6 col-md-2 mb-3">
+            <i class="fab fa-bootstrap fa-2x"></i><br>Bootstrap
+          </div>
+          <div class="col-6 col-md-2 mb-3">
+            <i class="fas fa-leaf fa-2x"></i><br>Spring Boot
+          </div>
+          <div class="col-6 col-md-2 mb-3">
+            <i class="fas fa-database fa-2x"></i><br>PostgreSQL
+          </div>
+        </div>
+      </div>
+      <!-- Sección de Proyectos -->
 
 
 
     </div>
 
-    <!-- Columna derecha: Imagen -->
-    <div class="sobre-mi-container col-md-6 text-center">
-      <img
-        src="img/jonathan_ayona.png"
-        alt="Foto de Jonathan"
-        class="img-fluid rounded-circle shadow sobre-mi-texto"
-        style="max-width: 400px;"
-      >
-    </div>
-  </div>
-</div>
-<div  class="container my-5 ">
+    <div class="container">
+      <div class="text-center ">
+        <h2 class="mono-title mb-4">Proyectos</h2>
 
+      </div>
+      <div class="card  p-4 mb-5 bg-dark text-light card-brillante " > 
+
+        <div class="row align-items-start">
+          <!-- Texto a la izquierda -->
+          <div class="col-md-6 my-4">
+            <h2 class="fw-bold">Sistema de Gestión Administrativa para el control de productos a través de código QR en
+              Rey Mueblería</h2>
+            <p>
+              Aplicación web desarrollada con arquitectura de tres capas: interfaz de usuario, lógica de negocio y base de
+              datos. Está orientada a optimizar el control de inventario mediante el uso de códigos QR únicos para cada
+              producto.<br>
+              El sistema permite:<br>
+              - 🏷️ Generar códigos QR para identificar productos de forma rápida y segura.<br>
+              - 📲 Registrar entradas y salidas de productos en tiempo real.<br>
+              - 📁 Administrar el inventario con trazabilidad completa de cada movimiento.<br>
+              - 👤 Gestionar usuarios y permisos para operar el sistema de forma controlada.<br>
+              Diseñado para entornos que requieren eficiencia, orden y control logístico, esta solución se adapta a
+              distintos tipos de organizaciones que manejan productos físicos y necesitan visibilidad sobre su flujo
+              operativo
+            </p>
+          <div class="row justify-content-center">
+    <div class="d-flex justify-content-center ">
+      <div class="col-4">
+        <a href="https://github.com/JJAS-DEV/Api_SistemaDeInventario" target="_blank"
+          class="btn btn-success btn-sm custom-btn">
+          <i class="fab fa-github me-2"></i> Backend
+        </a>
+      </div>
+      <div class="col-4">
+        <a href="https://github.com/JJAS-DEV/SistemaDEInventario-Frontend" target="_blank"
+          class="btn btn-success btn-sm custom-btn">
+          <i class="fab fa-github me-2"></i> Frontend
+        </a>
+      </div>
   
-<section >
-
-
-
-
-
-  <div  class="container text-center my-4">
-  <h2 id="Skills" class="mono-title mb-4">Stack Tecnológico</h2>
-  
-  <div class="row justify-content-center">
-    <div class="col-6 col-md-2 mb-3">
-      <i class="fab fa-java fa-2x"></i><br>Java
-    </div>
-    <div class="col-6 col-md-2 mb-3">
-      <i class="fab fa-js fa-2x"></i><br>JavaScript
-    </div>
-    <div class="col-6 col-md-2 mb-3">
-      <i class="fas fa-code fa-2x"></i><br>TypeScript
-    </div>
-    <div class="col-6 col-md-2 mb-3">
-      <i class="fab fa-angular fa-2x"></i><br>Angular
-    </div>
-    <div class="col-6 col-md-2 mb-3">
-      <i class="fas fa-database fa-2x"></i><br>MySQL
-    </div>
-    <div class="col-6 col-md-2 mb-3">
-      <i class="fab fa-git-alt fa-2x"></i><br>Git
-    </div>
-    <div class="col-6 col-md-2 mb-3">
-      <i class="fab fa-bootstrap fa-2x"></i><br>Bootstrap
-    </div>
-    <div class="col-6 col-md-2 mb-3">
-      <i class="fas fa-leaf fa-2x"></i><br>Spring Boot
-    </div>
-    <div class="col-6 col-md-2 mb-3">
-      <i class="fas fa-database fa-2x"></i><br>PostgreSQL
-    </div>
-  </div>
-  </div>
-</section>
+        <div class="col-4">
+        <a href="pdfs/manual_De_Usuario/manual_de_usuario.pdf" download
+          class="btn btn-success btn-sm custom-btn">
+          <i class="fas fa-user"></i> manual de usuario
+        </a>
+      </div>
     
-<div class="container text-center my-4">
-  <h2 class="mono-title mb-4">Proyectos</h2>
-  <div class="alert alert-info d-flex align-items-center" role="alert">
-    <i class="fas fa-spinner fa-spin me-2"></i>
-    <strong> Pronto Estaran Disponibles....</strong>
+    </div>
   </div>
-</div>
+  
+  
+  
+          </div>
+  
+          <!-- Bloque de fotos a la derecha -->
+          <div class="col-md-6">
+            <div class="container text-center my-4">
+              <div class="card shadow bg-dark text-light">
+                <img [src]="fotos[indiceActual]" class="card-img-top img-fluid" style="width: 600px; height: 250px;"
+                  alt="Foto actual" />
+                <div class="card-body">
+                  <button class="btn btn-outline-primary me-2" (click)="anteriorFoto()">
+                    <i class="fas fa-arrow-left me-1"></i> Anterior
+                  </button>
+  
+                  <button class="btn btn-outline-primary" (click)="siguienteFoto()">
+                    Siguiente <i class="fas fa-arrow-right ms-1"></i>
+                  </button>
+  
+                  <div class="container text-center mt-4">
+                    <div class="row justify-content-center">
+                      <div class="col-2">
+                        <i class="fab fa-java fa-sm"></i><br>
+                        <small>Java</small>
+                      </div>
+                      <div class="col-2">
+                        <i class="fas fa-database fa-sm"></i><br>
+                        <small>MySQL</small>
+                      </div>
+                      <div class="col-2">
+                        <i class="fab fa-angular fa-sm"></i><br>
+                        <small>Angular</small>
+                      </div>
+                      <div class="col-2">
+                        <i class="fas fa-leaf fa-sm"></i><br>
+                        <small>Spring Boot</small>
+                      </div>
+                      <div class="row justify-content-center">
+  
+                        <div class="col-2 " style="width: 100px;">
+                          <i class="fab fa-bootstrap fa-sm"></i><br>
+                          <small>Bootstrap</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  
+  
+  
+  
+                </div>
+              </div>
+            </div>
+  
+  
+          </div>
+  
+  
+         
+  
+        </div>
 
-        
-</div>
-
-      
 
 
+      </div>
+ <div class="alert alert-info d-flex align-items-center" role="alert">
+            <i class="fas fa-spinner fa-spin me-2"></i>
+            <strong> Este portafolio está en constante evolución. Pronto se sumarán nuevos proyectos</strong>
+          </div>
+    </div>
 
 
-
+  </div>
 
 
 </body>
