@@ -60,9 +60,8 @@ i {
 }
 
 .sepacionnav {
-  padding-top: 100px;
-  /* La altura de tu nav */
-  margin-top: 100px;
+  padding-top: 80px;
+  margin-top: 80px;
 }
 
 .card-brillante {
@@ -71,4 +70,8 @@ i {
   border-radius: 8px;
      box-shadow: 0 0 5px #00ffc3;
  
+}
+
+.custom-gap {
+  gap: 8rem; /* Puedes subir a 5rem, 6rem, etc. según lo que necesites */
 }

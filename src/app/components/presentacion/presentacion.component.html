@@ -1,5 +1,7 @@
-<body class="bg-dark text-light margen p-3">
+<body class="bg-dark text-light margen p-3" >
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&display=swap" rel="stylesheet">
+
   <h1 style="height: 90px;  overflow: hidden;
 " id="jonathanAyona"></h1>
   <div class="container my-2">
@@ -78,16 +80,14 @@
       </div>
       <!-- Sección de Proyectos -->
 
-
-
     </div>
 
-    <div class="container">
+    <div class="container m-2  sepacionnav" id="Proyectos">
       <div class="text-center ">
         <h2 class="mono-title mb-4">Proyectos</h2>
 
       </div>
-      <div class="card  p-4 mb-5 bg-dark text-light card-brillante " > 
+      <div class="card  p-4  bg-dark text-light card-brillante ">
 
         <div class="row align-items-start">
           <!-- Texto a la izquierda -->
@@ -95,7 +95,8 @@
             <h2 class="fw-bold">Sistema de Gestión Administrativa para el control de productos a través de código QR en
               Rey Mueblería</h2>
             <p>
-              Aplicación web desarrollada con arquitectura de tres capas: interfaz de usuario, lógica de negocio y base de
+              Aplicación web desarrollada con arquitectura de tres capas: interfaz de usuario, lógica de negocio y base
+              de
               datos. Está orientada a optimizar el control de inventario mediante el uso de códigos QR únicos para cada
               producto.<br>
               El sistema permite:<br>
@@ -107,35 +108,35 @@
               distintos tipos de organizaciones que manejan productos físicos y necesitan visibilidad sobre su flujo
               operativo
             </p>
-          <div class="row justify-content-center">
-    <div class="d-flex justify-content-center ">
-      <div class="col-4">
-        <a href="https://github.com/JJAS-DEV/Api_SistemaDeInventario" target="_blank"
-          class="btn btn-success btn-sm custom-btn">
-          <i class="fab fa-github me-2"></i> Backend
-        </a>
-      </div>
-      <div class="col-4">
-        <a href="https://github.com/JJAS-DEV/SistemaDEInventario-Frontend" target="_blank"
-          class="btn btn-success btn-sm custom-btn">
-          <i class="fab fa-github me-2"></i> Frontend
-        </a>
-      </div>
-  
-        <div class="col-4">
-        <a href="pdfs/manual_De_Usuario/manual_de_usuario.pdf" download
-          class="btn btn-success btn-sm custom-btn">
-          <i class="fas fa-user"></i> manual de usuario
-        </a>
-      </div>
-    
-    </div>
-  </div>
-  
-  
-  
+            <div class="row justify-content-center">
+              <div class="d-flex justify-content-center ">
+                <div class="col-4">
+                  <a href="https://github.com/JJAS-DEV/Api_SistemaDeInventario" target="_blank"
+                    class="btn btn-success btn-sm custom-btn">
+                    <i class="fab fa-github me-2"></i> Backend
+                  </a>
+                </div>
+                <div class="col-4">
+                  <a href="https://github.com/JJAS-DEV/SistemaDEInventario-Frontend" target="_blank"
+                    class="btn btn-success btn-sm custom-btn">
+                    <i class="fab fa-github me-2"></i> Frontend
+                  </a>
+                </div>
+
+                <div class="col-4">
+                  <a href="pdfs/manual_De_Usuario/manual_de_usuario.pdf" download
+                    class="btn btn-success btn-sm custom-btn">
+                    <i class="fas fa-user"></i> manual de usuario
+                  </a>
+                </div>
+
+              </div>
+            </div>
+
+
+
           </div>
-  
+
           <!-- Bloque de fotos a la derecha -->
           <div class="col-md-6">
             <div class="container text-center my-4">
@@ -146,63 +147,91 @@
                   <button class="btn btn-outline-primary me-2" (click)="anteriorFoto()">
                     <i class="fas fa-arrow-left me-1"></i> Anterior
                   </button>
-  
+
                   <button class="btn btn-outline-primary" (click)="siguienteFoto()">
                     Siguiente <i class="fas fa-arrow-right ms-1"></i>
                   </button>
-  
+
                   <div class="container text-center mt-4">
                     <div class="row justify-content-center">
                       <div class="col-2">
                         <i class="fab fa-java fa-sm"></i><br>
-                        <small>Java</small>
                       </div>
+
+
+
                       <div class="col-2">
                         <i class="fas fa-database fa-sm"></i><br>
-                        <small>MySQL</small>
                       </div>
                       <div class="col-2">
                         <i class="fab fa-angular fa-sm"></i><br>
-                        <small>Angular</small>
                       </div>
                       <div class="col-2">
                         <i class="fas fa-leaf fa-sm"></i><br>
-                        <small>Spring Boot</small>
                       </div>
                       <div class="row justify-content-center">
-  
+
                         <div class="col-2 " style="width: 100px;">
                           <i class="fab fa-bootstrap fa-sm"></i><br>
-                          <small>Bootstrap</small>
                         </div>
                       </div>
                     </div>
                   </div>
-  
-  
-  
-  
+
+
+
+
                 </div>
               </div>
             </div>
-  
-  
+
+
           </div>
-  
-  
-         
-  
+
+
+
+
         </div>
+
+      </div>
+
+    </div>
+
+
+    <!--Educacion -->
+
+
+    <div class="container" id="educacion" style="  padding-top: 50px;
+  margin-top: 50px;">
+      <div class="text-center ">
+        <h2 class="mono-title mb-4">Educacion</h2>
+
+      </div>
+      <div class="card  p-4  bg-dark text-light card-brillante " style=" width: 100%;">
+<div class="container my-4">
+  <div class="row justify-content-center">
+    <div class="col-12 col-md-10">
+      <div class="d-flex flex-wrap align-items-center custom-gap">
+        <!-- Escudo -->
+        <div>
+          <img src="Logo/LogoUni.jpeg" alt="Escudo Santiago Mariño" style="width: 100px;" class="img-fluid">
+        </div>
+
+        <!-- Texto institucional -->
+        <div class="flex-grow-1">
+          <p class="font-cinzel text-light fs-4 mb-0" >Instituto Universitario Politécnico Santiago Mariño</p>
+          <p class="font-cinzel text-secondary fs-5" >Ingeniería de Sistemas</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
       </div>
- <div class="alert alert-info d-flex align-items-center" role="alert">
-            <i class="fas fa-spinner fa-spin me-2"></i>
-            <strong> Este portafolio está en constante evolución. Pronto se sumarán nuevos proyectos</strong>
-          </div>
-    </div>
 
+    </div>
 
   </div>
 
