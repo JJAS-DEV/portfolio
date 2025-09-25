@@ -1,3 +1,8 @@
+
+body{
+  margin: 0%;
+  padding: 0%;
+}
 .sobre-mi-container {
   perspective: 800px;
   /* Define la “distancia” del plano 3D */

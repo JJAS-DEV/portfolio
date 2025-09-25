@@ -4,6 +4,7 @@ footer {
   box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.1), 0 -4px 12px rgba(0, 255, 255, 0.3);
   border-top: 3px solid #00ffff;
   transform: perspective(1000px) rotateX(2deg);
+  width: 100%;
 }
 .correo-link:hover {
   color: #00ffff;
@@ -14,3 +15,7 @@ footer {
   text-decoration: none;
   font-weight: 500;
 }
+
+
+
+

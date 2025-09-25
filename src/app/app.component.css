@@ -1,6 +1,5 @@
-
-
-body {
-  margin: 0;
-  padding: 0;
+.contenedor-principal {
+  display: grid;
+  grid-template-columns: 1fr; /* Una sola columna que ocupa todo el ancho disponible */
+  grid-gap: 0; /* Elimina el espacio entre las filas y columnas */
 }
