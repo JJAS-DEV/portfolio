@@ -1,17 +1,17 @@
 import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterModule,Router } from '@angular/router';
 
 @Component({
   selector: 'app-presentacion',
   standalone: true,
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './presentacion.component.html',
   styleUrl: './presentacion.component.css'
 })
 export class PresentacionComponent implements OnInit {
 
-  constructor(private route: ActivatedRoute, private scroller: ViewportScroller) { }
+  constructor(private route: ActivatedRoute, private scroller: ViewportScroller,private router:Router) { }
 
   ngOnInit(): void {
     this.route.fragment.subscribe(fragment => {
@@ -47,6 +47,8 @@ export class PresentacionComponent implements OnInit {
       (this.indiceActual - 1 + this.fotos.length) % this.fotos.length;
   }
 
-
+scrollToTop(): void {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
 
 }

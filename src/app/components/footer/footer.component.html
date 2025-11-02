@@ -1,23 +1,34 @@
 <footer class="text-center bg-dark text-light w-100">
   <!-- Grid container -->
-<div class="container pt-4">
-  <div class="row align-items-center">
-    <!-- Columna izquierda: QR de WhatsApp -->
-    <div class="col-md-4 text-center mb-4 mb-md-0">
-      <img src="numero/numero.png " alt="QR WhatsApp" style="max-width: 150px;">
-      <p class="text-light mt-2">Escanea para contactarme</p>
+  <div class="container pt-4">
+    <div class="row align-items-center">
+      <!-- Columna izquierda: QR de WhatsApp -->
+      <div class="col-md-4 text-center mb-4 mb-md-0">
+        <img src="numero/numero.png " alt="QR WhatsApp" style="max-width: 150px;">
+        <p class="text-light mt-2">Escanea para contactarme</p>
+      </div>
+
+      <!-- Columna derecha: Íconos sociales -->
+      <div class="col-md-8">
+        <section class="mb-4 text-center">
+          <a class="btn btn-outline-light btn-floating btn-lg m-1" target="_blank"
+            href="https://www.youtube.com/@jonathanayona2960" role="button"><i class="fab fa-youtube"></i></a>
+          <a class="btn btn-outline-light btn-floating btn-lg m-1" target="_blank"
+            href="https://www.linkedin.com/in/ing-jonathan-ayona/" role="button"><i class="fab fa-linkedin"></i></a>
+          <a class="btn btn-outline-light btn-floating btn-lg m-1" target="_blank" href="https://github.com/JJAS-DEV"
+            role="button"><i class="fab fa-github"></i></a>
+        </section>
+        <button class="btn btn-outline-success position-fixed bottom-0 end-0 m-3 shadow rounded-pill"
+          style="width: 10%; height: 10%;" (click)="scrollToTop()">
+
+          <a [routerLink]="['/presentacion']" fragment="aqui"><i class="fas fa-arrow-up"></i></a>
+
+
+        </button>
+      </div>
     </div>
 
-    <!-- Columna derecha: Íconos sociales -->
-    <div class="col-md-8">
-      <section class="mb-4 text-center">
-        <a class="btn btn-outline-light btn-floating btn-lg m-1"  target="_blank" href="https://www.youtube.com/@jonathanayona2960" role="button"><i class="fab fa-youtube"></i></a>
-        <a class="btn btn-outline-light btn-floating btn-lg m-1"  target="_blank"href="https://www.linkedin.com/in/ing-jonathan-ayona/" role="button"><i class="fab fa-linkedin"></i></a>
-        <a class="btn btn-outline-light btn-floating btn-lg m-1" target="_blank" href="https://github.com/JJAS-DEV" role="button"><i class="fab fa-github"></i></a>
-      </section>
-    </div>
   </div>
-</div>
 
   <!-- Grid container -->
 
@@ -25,10 +36,11 @@
   <div class="text-center p-3" style="background-color: rgba(255, 255, 255, 0.05);">
     © 2025 Jonathan Ayona <br>
     <span><a href="mailto:ayosuajon4@gmail.com" class="correo-link">ayosuajon4&#64;gmail.com</a>
-</span>
-<br>
-telefono:+56 920412378
+    </span>
+    <br>
+    telefono:+56 920412378
 
   </div>
+
   <!-- Copyright -->
 </footer>
