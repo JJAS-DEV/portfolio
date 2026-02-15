@@ -94,6 +94,115 @@
       <div class="card  p-4  bg-dark text-light card-brillante ">
 
         <div class="row align-items-start">
+
+          <!-- empiza primer proyecto ---------------- -->
+          <!-- Texto a la izquierda -->
+          <div class="col-md-6 my-4">
+            <h2 class="fw-bold">Sistema de Gestión Administrativa para el control de productos a través de código QR en
+              Rey Mueblería</h2>
+            <p>
+              Aplicación web desarrollada con arquitectura de tres capas: interfaz de usuario, lógica de negocio y base
+              de
+              datos. Está orientada a optimizar el control de inventario mediante el uso de códigos QR únicos para cada
+              producto.<br>
+              El sistema permite:<br>
+              - 🏷️ Generar códigos QR para identificar productos de forma rápida y segura.<br>
+              - 📲 Registrar entradas y salidas de productos en tiempo real.<br>
+              - 📁 Administrar el inventario con trazabilidad completa de cada movimiento.<br>
+              - 👤 Gestionar usuarios y permisos para operar el sistema de forma controlada.<br>
+              Diseñado para entornos que requieren eficiencia, orden y control logístico, esta solución se adapta a
+              distintos tipos de organizaciones que manejan productos físicos y necesitan visibilidad sobre su flujo
+              operativo
+            </p>
+            <div class="row justify-content-center">
+              <div class="d-flex justify-content-center ">
+                <div class="col-4">
+                  <a href="https://github.com/JJAS-DEV/Api_SistemaDeInventario" target="_blank"
+                    class="btn btn-success btn-sm custom-btn">
+                    <i class="fab fa-github me-2"></i> Backend
+                  </a>
+                </div>
+                <div class="col-4">
+                  <a href="https://github.com/JJAS-DEV/SistemaDEInventario-Frontend" target="_blank"
+                    class="btn btn-success btn-sm custom-btn">
+                    <i class="fab fa-github me-2"></i> Frontend
+                  </a>
+                </div>
+
+                <div class="col-4">
+                  <a href="pdfs/manual_De_Usuario/manual_de_usuario.pdf" download
+                    class="btn btn-success btn-sm custom-btn  me-2">
+                    <i class="fas fa-user"></i> manual de usuario
+                  </a>
+                </div>
+
+              </div>
+            </div>
+
+
+
+          </div>
+
+          <!-- Bloque de fotos a la derecha -->
+          <div class="col-md-6">
+            <div class="container text-center my-4">
+              <div class="card shadow bg-dark text-light">
+                <img [src]="fotos[indiceActual]" class="card-img-top img-fluid" style="width: 600px; height: 250px;"
+                  alt="Foto actual" />
+                <div class="card-body">
+                  <button class="btn btn-outline-primary me-2" (click)="anteriorFoto()">
+                    <i class="fas fa-arrow-left me-1"></i> Anterior
+                  </button>
+
+                  <button class="btn btn-outline-primary" (click)="siguienteFoto()">
+                    Siguiente <i class="fas fa-arrow-right ms-1"></i>
+                  </button>
+
+                  <div class="container text-center mt-4">
+                    <div class="row justify-content-center">
+                      <div class="col-2">
+                        <i class="fab fa-java fa-sm"></i><br>
+                      </div>
+
+
+
+                      <div class="col-2">
+                        <i class="fas fa-database fa-sm"></i><br>
+                      </div>
+                      <div class="col-2">
+                        <i class="fab fa-angular fa-sm"></i><br>
+                      </div>
+                      <div class="col-2">
+                        <i class="fas fa-leaf fa-sm"></i><br>
+                      </div>
+                      <div class="row justify-content-center">
+
+                        <div class="col-2 " style="width: 100px;">
+                          <i class="fab fa-bootstrap fa-sm"></i><br>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+                </div>
+              </div>
+
+            </div>
+
+
+          </div>
+
+
+
+
+        </div>
+<hr class="my-5 border-light"style="height: 4px; opacity: 1;">
+
+        <!--empieza segundo proyecto -------------------- -->
+         <div class="row align-items-start">
           <!-- Texto a la izquierda -->
           <div class="col-md-6 my-4">
             <h2 class="fw-bold">Sistema de Gestión Administrativa para el control de productos a través de código QR en
