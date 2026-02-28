@@ -36,6 +36,8 @@ export class PresentacionComponent implements OnInit {
 
   ];
 
+  fotoSegundoProyecto:String="proyecto2/proyecto_login.png";
+
   indiceActual: number = 0;
 
   siguienteFoto() {
