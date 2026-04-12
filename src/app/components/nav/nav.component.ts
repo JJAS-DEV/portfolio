@@ -9,7 +9,5 @@ import { Router, RouterModule } from '@angular/router';
   styleUrl: './nav.component.css'
 })
 export class NavComponent {
-  constructor
-
- (private router:Router) {}
+  constructor (private router:Router) {}
 }

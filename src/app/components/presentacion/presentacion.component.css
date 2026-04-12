@@ -63,7 +63,11 @@ i {
   background-color: #218838;
   transform: scale(1.05);
 }
-
+.card-img-top {
+  width: 100%;        /* ocupa todo el ancho del contenedor */
+  height: 200px;      /* altura fija estándar */
+  object-fit: cover;  /* recorta la imagen manteniendo proporción */
+}
 .sepacionnav {
   padding-top: 80px;
   margin-top: 80px;

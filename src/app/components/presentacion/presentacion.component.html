@@ -147,61 +147,59 @@
           <div class="col-md-6">
             <div class="container text-center my-4">
               <div class="card shadow bg-dark text-light">
-                <img [src]="fotos[indiceActual]" class="card-img-top img-fluid" style="width: 600px; height: 250px;"
-                  alt="Foto actual" />
-                <div class="card-body">
-                  <button class="btn btn-outline-primary me-2" (click)="anteriorFoto()">
-                    <i class="fas fa-arrow-left me-1"></i> Anterior
-                  </button>
 
-                  <button class="btn btn-outline-primary" (click)="siguienteFoto()">
-                    Siguiente <i class="fas fa-arrow-right ms-1"></i>
-                  </button>
+                <div class="col-md-6 bg-dark text-white p-3 text-center mx-auto d-block">
+                  <div class="featured">
+                    <img [src]="albums[0].thumb" [alt]="albums[0].caption" (click)="open(0,albumSEgundo)"
+                      class="card-img-top img-fluid mx-auto d-block" />
+                  </div>
+                </div>
 
-                  <div class="container text-center mt-4">
+
+
+
+                <div class="container text-center mt-4">
+                  <div class="row justify-content-center">
+                    <div class="col-2">
+                      <i class="fab fa-java fa-sm"></i><br>
+                    </div>
+
+
+
+                    <div class="col-2">
+                      <i class="fas fa-database fa-sm"></i><br>
+                    </div>
+                    <div class="col-2">
+                      <i class="fab fa-angular fa-sm"></i><br>
+                    </div>
+                    <div class="col-2">
+                      <i class="fas fa-leaf fa-sm"></i><br>
+                    </div>
                     <div class="row justify-content-center">
-                      <div class="col-2">
-                        <i class="fab fa-java fa-sm"></i><br>
-                      </div>
 
-
-
-                      <div class="col-2">
-                        <i class="fas fa-database fa-sm"></i><br>
-                      </div>
-                      <div class="col-2">
-                        <i class="fab fa-angular fa-sm"></i><br>
-                      </div>
-                      <div class="col-2">
-                        <i class="fas fa-leaf fa-sm"></i><br>
-                      </div>
-                      <div class="row justify-content-center">
-
-                        <div class="col-2 " style="width: 100px;">
-                          <i class="fab fa-bootstrap fa-sm"></i><br>
-                        </div>
+                      <div class="col-2 " style="width: 100px;">
+                        <i class="fab fa-bootstrap fa-sm"></i><br>
                       </div>
                     </div>
                   </div>
-
-
-
-
                 </div>
+
               </div>
-
             </div>
-
 
           </div>
 
 
-
-
         </div>
-        <hr class="my-5 border-light" style="height: 4px; opacity: 1;">
 
-        <!--empieza segundo proyecto -------------------- -->
+
+
+
+      </div>
+      <hr class="my-5 border-light" style="height: 4px; opacity: 1;">
+
+      <!--empieza segundo proyecto -------------------- -->
+      <div class="card  p-4  bg-dark text-light card-brillante ">
         <div class="row align-items-start">
           <!-- Texto a la izquierda -->
           <div class="col-md-6 my-4">
@@ -227,7 +225,7 @@
                     <i class="fab fa-github me-2"></i> repository
                   </a>
                 </div>
-               
+
 
 
               </div>
@@ -241,12 +239,17 @@
           <div class="col-md-6">
             <div class="container text-center my-4">
               <div class="card shadow bg-dark text-light">
-                <img src="{{fotoSegundoProyecto}}"  class="img-fluid" 
-                style="object-fit: contain;" 
+                
+                <div class="featured">
+                  <img [src]="albumSEgundo[0].thumb" [alt]="albumSEgundo[0].caption" (click)="open(0, albumSEgundo)"
+                    class="card-img-top img-fluid mx-auto d-block" />
+                </div>
 
-                  alt="Foto actual" />
+
+
+
                 <div class="card-body">
-                  
+
 
                   <div class="container text-center mt-4">
                     <div class="row justify-content-center">
@@ -259,13 +262,13 @@
                       <div class="col-2">
                         <i class="fas fa-database fa-sm"></i><br>
                       </div>
-                      
+
                       <div class="col-2">
                         <i class="fas fa-leaf fa-sm"></i><br>
                       </div>
                       <div class="row justify-content-center">
 
-                        
+
                       </div>
                     </div>
                   </div>
@@ -294,123 +297,125 @@
 
     </div>
 
+  </div>
 
-    <!--Educacion -->
+
+  <!--Educacion -->
 
 
-    <div class="container" id="educacion" style="  padding-top: 50px;
+  <div class="container" id="educacion" style="  padding-top: 50px;
   margin-top: 50px;">
-      <div class="text-center ">
-        <h2 class="mono-title mb-4">Educacion</h2>
-
-      </div> 
-
-
-      
-      <div class="card  p-4  bg-dark text-light card-brillante " style=" width: 100%;">
-        <div class="container my-4">
-          <div class="row justify-content-center">
-            <div class="col-12 col-md-10">
-              <div class="d-flex flex-wrap align-items-center gap-3">
-                <!-- Escudo -->
-                <div>
-                  <img src="Logo/LogoUni.png" alt="Escudo Santiago Mariño" style="width: 100px;" class="img-fluid">
-                </div>
-
-
-
-                <!-- Texto institucional -->
-                <div class="flex-grow-1">
-                  <p class="font-cinzel text-light fs-4 mb-0">Instituto Universitario Politécnico Santiago Mariño</p>
-                  <p class="font-cinzel text-secondary fs-5 mb-0">Ingeniería de Sistemas</p>
-                </div>
-              </div>
-
-              <!--certificado -->
-
-
-            </div>
-          </div>
-        </div>
-
-
-
-      </div>
+    <div class="text-center ">
+      <h2 class="mono-title mb-4">Educacion</h2>
 
     </div>
 
 
 
-    <div class="container" id="certificados" style="  padding-top: 50px;
-  margin-top: 50px;">
-      <div class="text-center ">
-        <h2 class="mono-title mb-4">certificados</h2>
-
-      </div>
-      <div class="card  p-4  bg-dark text-light card-brillante " style=" width: 100%;">
-        <div class="container my-4">
-          <div class="row justify-content-center">
-            <div class="col-12 col-md-10">
-              <div class="d-flex flex-wrap align-items-center gap-3">
-                <!-- Escudo -->
-                <div>
-                  <img src="Logo/udemy.svg.png" alt="logo de udemy" style="width: 100px;" class="img-fluid">
-                </div>
-
-
-
-                <!-- Texto institucional -->
-                <div class="flex-grow-1">
-                  <p class="font-cinzel text-light fs-4 mb-0">JavaScript TOTAL - De Cero a Programador Web en 18 Días
-                  </p>
-                  <p class="font-cinzel text-secondary fs-5 mb-0">Udemy</p>
-                  <p class="font-cinzel text-secondary fs-5">Expedición: oct. 2025</p>
-                  <p class="font-cinzel text-secondary fs-5"><a
-                      href="https://ude.my/UC-aa551cb3-2768-4304-bb1c-df8e502fb304" target="_blank"
-                      class="btn btn-outline-primary btn-lg rounded-pill shadow-sm font-cinzel">Url del certificado</a>
-                  </p>
-
-
-
-                </div>
-
+    <div class="card  p-4  bg-dark text-light card-brillante " style=" width: 100%;">
+      <div class="container my-4">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10">
+            <div class="d-flex flex-wrap align-items-center gap-3">
+              <!-- Escudo -->
+              <div>
+                <img src="Logo/LogoUni.png" alt="Escudo Santiago Mariño" style="width: 100px;" class="img-fluid">
               </div>
 
-              <!--certificado -->
-              <div class="d-flex flex-wrap align-items-center gap-3">
-                <!-- Escudo -->
-                <div>
-                  <img src="Logo/udemy.svg.png" alt="logo de udemy" style="width: 100px;" class="img-fluid">
-                </div>
 
 
-
-                <!-- Texto institucional -->
-                <div class="flex-grow-1">
-                  <p class="font-cinzel text-light fs-4 mb-0">Curso de Inglés para HispanosNivel A2/B1.1 garantizado
-                  </p>
-                  <p class="font-cinzel text-secondary fs-5 mb-0">Udemy</p>
-                  <p class="font-cinzel text-secondary fs-5">Expedición: 6 de Abril de 2024</p>
-                  <p class="font-cinzel text-secondary fs-5"><a
-                      href="https://ude.my/UC-743ca222-b4c6-4a3b-bb7b-be072bd5990e" target="_blank"
-                      class="btn btn-outline-primary btn-lg rounded-pill shadow-sm font-cinzel">Url del certificado</a>
-                  </p>
-
-                </div>
-
+              <!-- Texto institucional -->
+              <div class="flex-grow-1">
+                <p class="font-cinzel text-light fs-4 mb-0">Instituto Universitario Politécnico Santiago Mariño</p>
+                <p class="font-cinzel text-secondary fs-5 mb-0">Ingeniería de Sistemas</p>
               </div>
-
             </div>
+
+            <!--certificado -->
+
+
           </div>
         </div>
-
-
-
       </div>
+
+
 
     </div>
 
   </div>
+
+
+
+  <div class="container" id="certificados" style="  padding-top: 50px;
+  margin-top: 50px;">
+    <div class="text-center ">
+      <h2 class="mono-title mb-4">certificados</h2>
+
+    </div>
+    <div class="card  p-4  bg-dark text-light card-brillante " style=" width: 100%;">
+      <div class="container my-4">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10">
+            <div class="d-flex flex-wrap align-items-center gap-3">
+              <!-- Escudo -->
+              <div>
+                <img src="Logo/udemy.svg.png" alt="logo de udemy" style="width: 100px;" class="img-fluid">
+              </div>
+
+
+
+              <!-- Texto institucional -->
+              <div class="flex-grow-1">
+                <p class="font-cinzel text-light fs-4 mb-0">JavaScript TOTAL - De Cero a Programador Web en 18 Días
+                </p>
+                <p class="font-cinzel text-secondary fs-5 mb-0">Udemy</p>
+                <p class="font-cinzel text-secondary fs-5">Expedición: oct. 2025</p>
+                <p class="font-cinzel text-secondary fs-5"><a
+                    href="https://ude.my/UC-aa551cb3-2768-4304-bb1c-df8e502fb304" target="_blank"
+                    class="btn btn-outline-primary btn-lg rounded-pill shadow-sm font-cinzel">Url del certificado</a>
+                </p>
+
+
+
+              </div>
+
+            </div>
+
+            <!--certificado -->
+            <div class="d-flex flex-wrap align-items-center gap-3">
+              <!-- Escudo -->
+              <div>
+                <img src="Logo/udemy.svg.png" alt="logo de udemy" style="width: 100px;" class="img-fluid">
+              </div>
+
+
+
+              <!-- Texto institucional -->
+              <div class="flex-grow-1">
+                <p class="font-cinzel text-light fs-4 mb-0">Curso de Inglés para HispanosNivel A2/B1.1 garantizado
+                </p>
+                <p class="font-cinzel text-secondary fs-5 mb-0">Udemy</p>
+                <p class="font-cinzel text-secondary fs-5">Expedición: 6 de Abril de 2024</p>
+                <p class="font-cinzel text-secondary fs-5"><a
+                    href="https://ude.my/UC-743ca222-b4c6-4a3b-bb7b-be072bd5990e" target="_blank"
+                    class="btn btn-outline-primary btn-lg rounded-pill shadow-sm font-cinzel">Url del certificado</a>
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+  </div>
+
+
   <button class="btn btn-outline-success position-fixed bottom-0 end-0 m-3 shadow rounded-pill"
     style="width: 10%; height: 5%;" (click)="scrollToTop()">
     <i class="fas fa-arrow-up"></i>
