@@ -80,7 +80,12 @@ export class PresentacionComponent implements OnInit {
 
 
  open(index: number, album: { src: string; caption: string; thumb: string }[]): void {
-    this.lightbox.open(album, index);
+   
+  this.lightbox.open(album, index,{
+    disableScrolling: true,    // Esto bloquea el scroll automáticamente
+    centerVertically: true,    // Intenta centrar verticalmente
+    alwaysShowNavOnTouchDevices: true
+  });
   }
 
   close(): void {
@@ -90,6 +95,19 @@ export class PresentacionComponent implements OnInit {
   fotoSegundoProyecto:String="proyecto2/proyecto_login.png";
 
   indiceActual: number = 0;
+
+
+  mostrarModal = false;
+
+abrirModal() {
+  this.mostrarModal = true;
+  document.body.style.overflow = 'hidden'; // bloquea scroll del fondo
+}
+
+cerrarModal() {
+  this.mostrarModal = false;
+  document.body.style.overflow = 'auto'; // reactiva scroll
+}
 
   
 scrollToTop(): void {
