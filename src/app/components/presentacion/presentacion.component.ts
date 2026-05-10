@@ -15,6 +15,7 @@ export class PresentacionComponent implements OnInit {
   albums: { src: string; caption: string; thumb: string }[] = [];
   albumSEgundo: { src: string; caption: string; thumb: string }[] = [];
   cartaDEfinalizacion: { src: string; caption: string; thumb: string }[] = [];
+  certificados: { src: string; caption: string; thumb: string }[] = [];
 
 
 
@@ -71,6 +72,8 @@ export class PresentacionComponent implements OnInit {
 
     }
   ]
+
+  
   }
 
 
