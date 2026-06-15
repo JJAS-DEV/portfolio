@@ -13,7 +13,7 @@
                             <div class="form-group mb-3">
                                 <label for="nombre">Nombre:</label>
                                 <input [(ngModel)]="items.nombre" required minlength="3" #nombre="ngModel" type="text"
-                                    class="form-control" id="nombre" name="nombre" maxlength="20">
+                                    class="form-control" id="nombre" name="nombre" placeholder="ingresa tu nombre" maxlength="20">
                                 @if(nombre.invalid && (nombre.dirty || nombre.touched)){
 
                                 @if (nombre.errors?.['required']) {
@@ -32,7 +32,7 @@
                             <div class="form-group mb-3">
                                 <label for="apellido">Apellido:</label>
                                 <input type="text" class="form-control" id="apellido" name="apellido"
-                                    [(ngModel)]="items.apellido" required minlength="3" maxlength="20"
+                                    [(ngModel)]="items.apellido" placeholder="ingresa tu apellido" required minlength="3" maxlength="20"
                                     #apellido="ngModel">
                                 @if(apellido.invalid && (apellido.dirty || apellido.touched)){
                                 @if (apellido.errors?.['required']) {
@@ -51,7 +51,7 @@
                             <div class="form-group mb-3">
                                 <label for="correo">Correo:</label>
                                 <input type="email" class="form-control " id="correo" name="correo"
-                                    [(ngModel)]="items.correo" required minlength="3" maxlength="200" #correo="ngModel"
+                                    [(ngModel)]="items.correo" placeholder="ingresa tu correo" required minlength="3" maxlength="200" #correo="ngModel"
                                            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,}$">
                                 @if(correo.invalid && (correo.dirty || correo.touched)){
 
@@ -74,7 +74,7 @@
                             <div class="form-group mb-3">
                                 <label for="asunto">Asunto:</label>
                                 <input type="text" class="form-control" id="asunto" name="asunto"
-                                    [(ngModel)]="items.asunto" required minlength="3" maxlength="200" #asunto="ngModel">
+                                    [(ngModel)]="items.asunto" placeholder="ingresa el asunto" required minlength="3" maxlength="200" #asunto="ngModel">
                                 @if(asunto.invalid && (asunto.dirty || asunto.touched)){
                                 @if (asunto.errors?.['required']) {
                                 <div class="text-danger m-3">El asunto es requerido</div>
@@ -93,7 +93,7 @@
                             <div class="form-group mb-3">
                                 <label for="mensaje">Mensaje:</label>
                                 <textarea class="form-control" id="mensaje" name="mensaje" rows="4"
-                                    [(ngModel)]="items.mensaje" required #mensaje="ngModel" minlength="3" maxlength="2000" ></textarea>
+                                    placeholder="ingresa tu mensaje" [(ngModel)]="items.mensaje" required #mensaje="ngModel" minlength="3" maxlength="2000" ></textarea>
                                 @if(mensaje.invalid && (mensaje.dirty || mensaje.touched)){
                                 @if (mensaje.errors?.['required']) {
                                 <div class="text-danger m-3">El mensaje es requerido</div>
