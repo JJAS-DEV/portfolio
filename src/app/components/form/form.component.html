@@ -1,0 +1,122 @@
+<div class="d-flex justify-content-center my-5">
+    <div class="card shadow bg-dark text-white" style="max-width: 900px; width: 100%;">
+        <div class="card-header">Contacto</div>
+        <div class="card-body">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col">
+                        <img [src]="url" alt="Imagen de contacto" class="img-fluid ">
+                    </div>
+                    <div class="col">
+                        <form (ngSubmit)="addItem(formulario)" #formulario="ngForm">
+                            <div class="form-group mb-3">
+                                <label for="nombre">Nombre:</label>
+                                <input [(ngModel)]="items.nombre" required minlength="3" #nombre="ngModel" type="text"
+                                    class="form-control" id="nombre" name="nombre" maxlength="20">
+                                @if(nombre.invalid && (nombre.dirty || nombre.touched)){
+
+                                @if (nombre.errors?.['required']) {
+                                <div class="text-danger m-3">El nombre es requerido</div>
+                                }
+                                @if (nombre.errors?.['minlength']) {
+                                <div class="text-danger m-3">Debe tener al menos 3 caracteres</div>
+                                }
+                                @if (nombre.errors?.['maxlength']) {
+                                <div class="text-danger m-3">No debe exceder los 20 caracteres</div>
+                                }
+                                }
+                            </div>
+
+
+                            <div class="form-group mb-3">
+                                <label for="apellido">Apellido:</label>
+                                <input type="text" class="form-control" id="apellido" name="apellido"
+                                    [(ngModel)]="items.apellido" required minlength="3" maxlength="20"
+                                    #apellido="ngModel">
+                                @if(apellido.invalid && (apellido.dirty || apellido.touched)){
+                                @if (apellido.errors?.['required']) {
+                                <div class="text-danger m-3">El apellido es requerido</div>
+                                }
+                                @if (apellido.errors?.['minlength']) {
+                                <div class="text-danger m-3">Debe tener al menos 3 caracteres</div>
+                                }
+                                @if (apellido.errors?.['maxlength']) {
+                                <div class="text-danger m-3">No debe exceder los 20 caracteres</div>
+                                }
+
+                                }
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label for="correo">Correo:</label>
+                                <input type="email" class="form-control " id="correo" name="correo"
+                                    [(ngModel)]="items.correo" required minlength="3" maxlength="200" #correo="ngModel"
+                                           pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,}$">
+                                @if(correo.invalid && (correo.dirty || correo.touched)){
+
+                                @if (correo.errors?.['required'] || correo.errors?.['email'] || correo.errors?.['pattern']) {
+                                <div class="text-danger m-3">El correo es requerido y Debe ser un correo válido (ej: usuario&#64;dominio.com)</div>
+                                }
+
+                                @if (correo.errors?.['minlength']) {
+                                <div class="text-danger m-3">Debe tener al menos 3 caracteres</div>
+                                }
+
+                                @if (correo.errors?.['maxlength']) {
+                                <div class="text-danger m-3">No puede superar los 20 caracteres</div>
+                                }
+
+                               
+                                }
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label for="asunto">Asunto:</label>
+                                <input type="text" class="form-control" id="asunto" name="asunto"
+                                    [(ngModel)]="items.asunto" required minlength="3" maxlength="200" #asunto="ngModel">
+                                @if(asunto.invalid && (asunto.dirty || asunto.touched)){
+                                @if (asunto.errors?.['required']) {
+                                <div class="text-danger m-3">El asunto es requerido</div>
+                                }
+                                @if (asunto.errors?.['minlength']) {
+                                <div class="text-danger m-3">Debe tener al menos 3 caracteres</div>
+                                }
+                                @if (asunto.errors?.['maxlength']) {
+                                <div class="text-danger m-3">No debe exceder los 200 caracteres</div>
+                                }
+
+
+                                }
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label for="mensaje">Mensaje:</label>
+                                <textarea class="form-control" id="mensaje" name="mensaje" rows="4"
+                                    [(ngModel)]="items.mensaje" required #mensaje="ngModel" minlength="3" maxlength="2000" ></textarea>
+                                @if(mensaje.invalid && (mensaje.dirty || mensaje.touched)){
+                                @if (mensaje.errors?.['required']) {
+                                <div class="text-danger m-3">El mensaje es requerido</div>
+                                }
+                                @if (mensaje.errors?.['minlength']) {
+                                <div class="text-danger m-3">Debe tener al menos 3 caracteres</div>
+                                }
+                                @if (mensaje.errors?.['maxlength']) {
+                                <div class="text-danger m-3">No debe exceder los 20 caracteres</div>
+                                }
+                                }
+                            </div>
+
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary" [disabled]="formulario.invalid">
+                                    Enviar
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
