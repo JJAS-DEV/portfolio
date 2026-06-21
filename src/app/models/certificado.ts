@@ -3,5 +3,6 @@ export class certificado{
     nombre!:string;
     fecha!:String;
     image!:String;
+    url!:String;
 
 }
