@@ -2,12 +2,13 @@ import { CommonModule, ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterModule, Router } from '@angular/router';
 import { Lightbox, LightboxModule } from 'ngx-lightbox';
+import { CertificadosComponent } from "../certificados/certificados.component";
 
 
 @Component({
   selector: 'app-presentacion',
   standalone: true,
-  imports: [CommonModule, LightboxModule],
+  imports: [CommonModule, LightboxModule, CertificadosComponent],
   templateUrl: './presentacion.component.html',
   styleUrl: './presentacion.component.css'
 })
