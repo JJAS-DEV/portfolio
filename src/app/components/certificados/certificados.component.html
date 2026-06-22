@@ -38,32 +38,39 @@
 
               <!-- Miniatura (Usando el logo de Udemy como en el formato original) -->
               <img src={{certificado.image}} class="img-thumbnail" style="width:150px;cursor:pointer"
-                data-bs-toggle="modal" data-bs-target="#modalJS" />
+                data-bs-toggle="modal"   [attr.data-bs-target]="'#modal' + $index" (click)="openModal(certificado.id)" />
 
-              <!-- Modal -->
-              <div class="modal fade bg-dark" id="modalJS" tabindex="-1" aria-hidden="true">
+
+              @if(showMoadal){
+                    <div class="abrir-modal animacion fadeIn"  [attr.id]="'modal' + $index" tabindex="-1" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered modal-lg">
+
                   <div class="modal-content bg-dark text-light border-0 shadow-lg">
                     <!-- Encabezado con la X -->
                     <div class="modal-header text-light">
                       <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
-                        aria-label="Cerrar"></button>
+                        aria-label="Cerrar" (click)="openModal(1)"></button>
                     </div>
                     <!-- Cuerpo con la imagen -->
                     <div class="modal-body text-center bg-dark text-light">
-                      <img src={{certificado.image}} class="img-fluid rounded" />
+                      <img src={{certifiadoSeleccionado.image}} class="img-fluid rounded" />
                     </div>
                   </div>
                 </div>
               </div>
 
+              }
+              <!-- Modal -->
+          
+
             </div>
+
+
               
             }
             <!--certificado 1 -->
         
 
-    
 
 
           </div>

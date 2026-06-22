@@ -8,19 +8,36 @@ import { certificado } from '../../models/certificado';
   imports: [],
   templateUrl: './certificados.component.html',
 
-   styleUrls: [
+  styleUrls: [
     './certificados.component.css',
     '../presentacion/presentacion.component.css'
   ]
 })
 export class CertificadosComponent implements OnInit {
-  certficados:certificado[]=[]
+  certficados: certificado[] = []
+  certifiadoSeleccionado!: certificado;
+
   ngOnInit(): void {
-    this.certficados=this.service.findAll();
+    this.certficados = this.service.findAll();
 
   }
 
-  constructor(private service:CertificadoService ){
+
+  showMoadal: boolean = false;
+
+  openModal(id: number) {
+
+    let encontrado = this.certficados.find(c => c.id === id);
+     if (encontrado) {
+    this.certifiadoSeleccionado = encontrado;
+  }
+
+    this.showMoadal = !this.showMoadal;
+
+
+
+  }
+  constructor(private service: CertificadoService) {
 
   }
 
