@@ -3,7 +3,7 @@ import { certificado } from "../models/certificado";
 
 export const certificados: certificado[] = [{
 
-    id: 1,
+    id: 0,
     nombre: "JavaScript TOTAL - De Cero a Programador Web en 18 Días",
     fecha: "octubre 2025",
     image: "certificados/certificadoJavaScrip.jpg",
@@ -13,7 +13,7 @@ export const certificados: certificado[] = [{
 
 
 }, {
-    id: 2,
+    id: 1,
     nombre: "Curso de Inglés para Hispanos Nivel A2/B1.1 garantizado",
     fecha: "Abril 2024",
     image: "certificados/Certificados_De_Ingles.jpg",
@@ -21,7 +21,7 @@ export const certificados: certificado[] = [{
 
 },
 {
-    id: 3,
+    id: 2,
     nombre: "Spring Framework & Spring Boot desde cero a experto",
     fecha: "mayo 2026",
     image: "certificados/spring 0 a experto.jpg",
@@ -29,7 +29,7 @@ export const certificados: certificado[] = [{
 
 },
 {
-    id: 4,
+    id: 3,
     nombre: "GIT+GitHub: Todo unsistema de control de versiones de cero",
     fecha: "junio 2026",
     image: "certificados/certificado-git.jpg",
