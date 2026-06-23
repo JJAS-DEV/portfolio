@@ -33,7 +33,6 @@ export class CertificadosComponent implements OnInit {
     }
 
     this.showMoadal = !this.showMoadal;
- 
 
 
 

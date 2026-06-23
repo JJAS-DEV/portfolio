@@ -1,7 +1,8 @@
-.abrir-modal {
+   /* se queda fijo en pantalla */
+.abrir-modal{
     background-color: rgba(0, 0, 0, 0.2);
     /* muy tenue */
-      position: fixed;   /* se queda fijo en pantalla */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -13,9 +14,6 @@
     /* centra horizontal */
     align-items: center;
     /* centra vertical */
-}
-.no-scroll {
-    overflow: hidden;
 }
 
 .abrir-modal img {
@@ -57,10 +55,9 @@
 }
 
 @media (max-width: 576px) {
-    .mi-imagen {
-        width: 85%;
-        /* ocupa todo el ancho */
-        height: auto;
-        /* mantiene proporción */
-    }
+
+  .mi-imagen {
+    width: 85%;     /* ocupa todo el ancho */
+    height: 90%;    /* ajusta la altura automáticamente */
+  }
 }
