@@ -1,0 +1,110 @@
+<div class="container" id="certificados" style="  padding-top: 50px;
+  margin-top: 50px;">
+  <div class="text-center ">
+    <h2 class="mono-title mb-4">certificados</h2>
+
+  </div>
+  <div class="card  p-4  bg-dark text-light card-brillante " style=" width: 100%;">
+    <div class="container my-4">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10">
+
+
+
+
+          @for(certificado of certficados; track $index){
+
+
+          <div class="d-flex flex-wrap align-items-center  gap-3 mb-2">
+
+            <!-- Texto institucional -->
+            <div class="flex-grow-1">
+              <div>
+                <img src="Logo/udemy.svg.png" alt="logo de udemy" style="width: 100px;" class="img-fluid">
+              </div>
+              <p class="font-cinzel text-light fs-4 mb-0">
+                {{certificado.nombre}}
+              </p>
+              <p class="font-cinzel text-secondary fs-5 mb-0">Udemy</p>
+              <p class="font-cinzel text-secondary fs-5">{{certificado.fecha}}</p>
+
+              <p class="font-cinzel text-secondary fs-5">
+                <a href={{certificado.url}} target="_blank"
+                  class="btn btn-outline-primary btn-lg rounded-pill shadow-sm font-cinzel">
+                  Url del certificado
+                </a>
+              </p>
+            </div>
+
+            <!-- Miniatura (Usando el logo de Udemy como en el formato original) -->
+            <img src={{certificado.image}} class="img-thumbnail" style="width:150px;cursor:pointer"
+              data-bs-toggle="modal" [attr.data-bs-target]="'#modal' + $index" (click)="openModal(certificado.id)" />
+            <!-- modal-->
+
+            @if(showMoadal){
+            <!-- Modal -->
+            <div class="abrir-modal animacion fadeIn" [attr.id]="'modal' + $index" tabindex="-1" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered d-flex justify-content-center align-items-center modal-lg">
+
+                <div class="modal-content mi-imagen">
+                  <!-- Header con la X -->
+
+
+                  <div class="modal-header d-flex justify-content-between align-items-center">
+                    <!-- Título a la izquierda -->
+                    <h5 class="modal-title text-light">Imagen del certificado</h5>
+
+                    <!-- Botón de cerrar a la derecha -->
+                    <button type="button" class="btn btn-danger btn-sm" data-bs-dismiss="modal" aria-label="Cerrar"
+                      (click)="openModal(1)">
+                      x
+                    </button>
+                  </div>
+                  <!-- Cuerpo con la imagen -->
+                  <div class="modal-body  mt-3">
+
+                    <img src="{{certifiadoSeleccionado.image}}" class="img-fluid rounded" />
+                  </div>
+                  <div class="modal-footer d-flex justify-content-between mt-3">
+                    <!-- Botón Atrás -->
+                    <button type="button" class="btn" (click)="atras(certifiadoSeleccionado.id)"
+                      [disabled]="certifiadoSeleccionado.id <= 0">
+                      <i class="fas fa-arrow-left fa-lg"></i>
+                    </button>
+
+                    <!-- Botón Siguiente -->
+                    <button type="button" class="btn " (click)="siguiente(certifiadoSeleccionado.id)"
+                      [disabled]="certifiadoSeleccionado.id >= certficados.length - 1">
+                      <i class="fas fa-arrow-right fa-lg"></i>
+                    </button>
+                  </div>
+
+                </div>
+
+
+
+              </div>
+            </div>
+
+
+            }
+
+
+          </div>
+
+
+
+          }
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+</div>

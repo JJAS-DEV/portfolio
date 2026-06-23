@@ -1,0 +1,66 @@
+.abrir-modal {
+    background-color: rgba(0, 0, 0, 0.2);
+    /* muy tenue */
+      position: fixed;   /* se queda fijo en pantalla */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    display: flex;
+    /* activa flexbox */
+    justify-content: center;
+    /* centra horizontal */
+    align-items: center;
+    /* centra vertical */
+}
+.no-scroll {
+    overflow: hidden;
+}
+
+.abrir-modal img {
+    max-width: 100%;
+    /* que no se salga de la pantalla */
+    max-height: 100%;
+    /* ajusta alto también */
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
+.animacion {
+    animation-duration: 2s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+    -webkit-animation-name: fadeIn;
+}
+
+.mi-imagen {
+    width: 80%;
+    height: 50%;
+    /* centra la imagen */
+}
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+@media (max-width: 576px) {
+    .mi-imagen {
+        width: 85%;
+        /* ocupa todo el ancho */
+        height: auto;
+        /* mantiene proporción */
+    }
+}
