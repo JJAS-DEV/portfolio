@@ -20,6 +20,8 @@ export class CertificadosComponent implements OnInit {
   ngOnInit(): void {
     this.certficados = this.service.findAll();
 
+
+    
   }
 
 

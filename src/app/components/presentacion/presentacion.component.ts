@@ -3,12 +3,13 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterModule, Router } from '@angular/router';
 import { Lightbox, LightboxModule } from 'ngx-lightbox';
 import { CertificadosComponent } from "../certificados/certificados.component";
+import { PerfilComponent } from '../perfil/perfil.component';
 
 
 @Component({
   selector: 'app-presentacion',
   standalone: true,
-  imports: [CommonModule, LightboxModule, CertificadosComponent],
+  imports: [CommonModule, LightboxModule, CertificadosComponent,PerfilComponent],
   templateUrl: './presentacion.component.html',
   styleUrl: './presentacion.component.css'
 })

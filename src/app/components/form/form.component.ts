@@ -61,5 +61,11 @@ export class FormComponent {
   }
 
 
+  scrollToTop():void{
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+
+
+  }
+
 
 }

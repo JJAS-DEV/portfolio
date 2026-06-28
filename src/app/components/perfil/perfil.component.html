@@ -1,0 +1,86 @@
+<div class="row align-items-center">
+  <!-- Columna izquierda: Texto -->
+  <div class="col-md-6 ">
+    <div class="sobre-mi-texto">
+
+      <h2 class="mono-title">Jonathan Ayona</h2>
+    </div>
+    <div class="sobre-mi-container">
+
+      <p class="sobre-mi-texto">
+        <!-- aqui va la presentacion -->
+        {{perfil.presentacion}}
+      </p>
+
+
+      <a href={{perfil.curriculum}} download class="btn btn-success btn-lg mt-3 custom-btn"
+        style="margin-bottom: 15px;">
+        <i class="fas fa-download" style="margin-bottom: 3px;">
+
+
+        </i> Descargar CV
+      </a>
+    </div>
+
+
+
+
+
+
+  </div>
+  <div class="sobre-mi-container col-md-6 text-center">
+    <img src="{{perfil.imagen}}" alt="Foto de Jonathan" class="img-fluid rounded-circle shadow sobre-mi-texto"
+      (click)="openModal()">
+  </div>
+  @if(open){
+  <div class="abrir-modal animacion fadeIn" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered d-flex justify-content-center align-items-center modal-lg">
+
+      <div class="modal-content mi-imagen">
+        <!-- Header con la X -->
+
+
+        <div class="modal-header d-flex justify-content-between align-items-center">
+          <!-- Título a la izquierda -->
+          <h5 class="modal-title text-light">jonathan Ayona</h5>
+
+          <!-- Botón de cerrar a la derecha -->
+          <button type="button" class="btn btn-danger btn-sm" data-bs-dismiss="modal" aria-label="Cerrar"
+            (click)="openModal()">
+            x
+          </button>
+        </div>
+        <!-- Cuerpo con la imagen -->
+        <div class="modal-body  mt-3">
+
+
+          <img src="{{perfil.imagen}}" class="img-fluid rounded" />
+        </div>
+        <div class="modal-footer  d-flex justify-content-center my-2">
+          <a href={{perfil.linkedin}} target="_blank" class="text-primary me-4">
+            <i class="fab fa-linkedin fa-2x"></i>
+          </a>
+
+          <!-- Icono WhatsApp -->
+          <a href={{perfil.whatsapp}} target="_blank" class="text-success">
+            <i class="fab fa-whatsapp fa-2x"></i>
+          </a>
+          <!-- Botón Atrás -->
+
+        </div>
+
+      </div>
+
+
+
+    </div>
+  </div>
+
+  }
+
+
+
+
+
+
+</div>
