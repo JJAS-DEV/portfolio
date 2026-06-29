@@ -6,6 +6,7 @@
   </div>
   <div class="card  p-4  bg-dark text-light card-brillante " style=" width: 100%;">
     <div class="container my-4">
+
       <div class="row justify-content-center">
         <div class="col-12 col-md-10">
 
@@ -38,7 +39,9 @@
 
             <!-- Miniatura (Usando el logo de Udemy como en el formato original) -->
             <img src={{certificado.image}} class="img-thumbnail" style="width:150px;cursor:pointer"
-              data-bs-toggle="modal" [attr.data-bs-target]="'#modal' + $index" (click)="openModal(certificado.id)" />
+              data-bs-attr.data-bs-target]="'#modal' + $index" (click)="openModal(certificado.id)" />
+              
+         
             <!-- modal-->
 
             @if(showMoadal){
@@ -72,8 +75,16 @@
                       <i class="fas fa-arrow-left fa-lg"></i>
                     </button>
 
+                    <!-- Botón del medio -->
+                    <p class="font-info text-secondary fs-2">
+                      <a href={{certifiadoSeleccionado.url}} target="_blank"
+                        class="btn btn-outline-primary btn-sm rounded-pill shadow-sm font-info">
+                        Url del certificado
+                      </a>
+                    </p>
+
                     <!-- Botón Siguiente -->
-                    <button type="button" class="btn " (click)="siguiente(certifiadoSeleccionado.id)"
+                    <button type="button" class="btn" (click)="siguiente(certifiadoSeleccionado.id)"
                       [disabled]="certifiadoSeleccionado.id >= certficados.length - 1">
                       <i class="fas fa-arrow-right fa-lg"></i>
                     </button>
@@ -99,12 +110,56 @@
 
 
 
+
+
+
         </div>
+
+
+        <div class="col-12 col-md-10">
+          <div class="card bg-dark text-light shadow-sm p-3 mb-4" style="width: 100%;">
+            <div class="row g-3 align-items-center">
+
+              <!-- Columna de texto -->
+              <div class="col">
+                <div class="card-body">
+                  <h5 class="card-title font-cinzel">
+                    Angular & Spring Boot: Creando Webapp Full Stack
+                  </h5>
+                  <p class="card-text text-secondary">Progreso actual</p>
+
+                  <!-- Barra de progreso -->
+                  <div class="progress" style="height: 25px; width: 100%;">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-success font-cinzel fs-6"
+                      role="progressbar" style="width: 45%;" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+                      45%
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Columna de imagen -->
+
+
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
       </div>
+
     </div>
 
 
 
   </div>
+  <br>
+
+
 
 </div>
