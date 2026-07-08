@@ -21,7 +21,7 @@ export class CertificadosComponent implements OnInit {
     this.certficados = this.service.findAll();
 
 
-    
+
   }
 
 
@@ -40,27 +40,30 @@ export class CertificadosComponent implements OnInit {
 
   }
   siguiente(id: number) {
-    console.log(id)
+    id = id + 1;
     if (id < this.certficados.length) {
-      console.log(this.certficados.length)
-      id = id + 1;
       let encontrado = this.certficados.find(c => c.id === id);
       if (encontrado) {
+        console.log(id);
         this.certifiadoSeleccionado = encontrado;
       }
+    } else {
+      console.log("no hay mas certificados");
+      this.atras(1);
 
     }
-
-    
-
   }
-  atras(id:number){
-      id = id -1;
-      let encontrado = this.certficados.find(c => c.id === id);
-      if (encontrado) {
-        this.certifiadoSeleccionado = encontrado;
-      }
-
+  atras(id: number) {
+    id = id - 1;
+    if (id >= 0) {
+    let encontrado = this.certficados.find(c => c.id === id);
+    if (encontrado) {
+      console.log(id);
+      this.certifiadoSeleccionado = encontrado;
+    }
+  }else {
+    this.certifiadoSeleccionado = this.certficados[this.certficados.length - 1];
+  }
   }
   constructor(private service: CertificadoService) {
 
