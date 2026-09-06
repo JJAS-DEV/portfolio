@@ -16,8 +16,10 @@ import { PerfilComponent } from '../perfil/perfil.component';
 export class PresentacionComponent implements OnInit {
   albums: { src: string; caption: string; thumb: string }[] = [];
   albumSEgundo: { src: string; caption: string; thumb: string }[] = [];
+
   cartaDEfinalizacion: { src: string; caption: string; thumb: string }[] = [];
   certificados: { src: string; caption: string; thumb: string }[] = [];
+  proyecto3: { src: string; caption: string; thumb: string }[] = [];
 
 
 
@@ -75,7 +77,28 @@ export class PresentacionComponent implements OnInit {
     }
   ]
 
-  
+    this.proyecto3 = [
+      {
+        src: 'proyecto_3/Imagen1.png',
+        caption: 'Imagen 1',
+        thumb: 'proyecto_3/Imagen1.png'
+      },
+      {
+        src: 'proyecto_3/Imagen2.png',
+        caption: 'Imagen 2',
+        thumb: 'proyecto_3/Imagen2.png'
+      },  
+      {
+        src: 'proyecto_3/Imagen3.png',
+        caption: 'Imagen 3',
+        thumb: 'proyecto_3/Imagen3.png'
+      },  
+      {
+        src: 'proyecto_3/Imagen4.png',
+        caption: 'Imagen 4',
+        thumb: 'proyecto_3/Imagen4.png'
+      },  
+    ];
   }
 
 

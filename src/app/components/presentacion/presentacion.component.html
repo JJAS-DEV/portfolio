@@ -7,7 +7,7 @@
 
 
   <div class="container my-2">
-  <perfil/>
+    <perfil />
 
 
     <div id="Skills" class="my-4 sepacionnav">
@@ -251,14 +251,88 @@
 
 
 
-          <div class="alert alert-info d-flex align-items-center" role="alert">
-            <i class="fas fa-spinner fa-spin me-2"></i>
-            <strong> Este portafolio está en constante evolución. Pronto se sumarán nuevos proyectos</strong>
-          </div>
+
 
         </div>
 
       </div>
+      <hr class="my-5 border-light" style="height: 4px; opacity: 1;">
+
+
+      <!-- tercer proyecto  -->
+      <div class="card  p-4  bg-dark text-light card-brillante ">
+        <div class="row align-items-start">
+          <!-- Texto a la izquierda -->
+          <div class="col-md-6 my-4">
+            <h2 class="fw-bold">Dragon Ball App con Buscador, Paginador y Favoritos</h2>
+            <p>
+              Este proyecto es una aplicación desarrollada en <strong>Angular 19</strong> que consume la <strong>API
+                pública de Dragon Ball</strong>.<br>
+              - 🔍 <strong>Buscador dinámico</strong> para explorar personajes y planetas.<br>
+              - 📑 <strong>Paginador</strong> para organizar grandes listados de datos.<br>
+              - ⭐ <strong>Módulo de favoritos</strong> para guardar y gestionar personajes seleccionados.<br>
+              - 🎨 Interfaz responsiva con <strong>Bootstrap, CSS3 y SweetAlert2</strong>.<br>
+              Diseñada para demostrar habilidades en consumo de APIs REST, manejo de componentes, enrutamiento y mejora
+              de la experiencia de usuario.
+            </p>
+
+            <div class="row justify-content-center">
+              <div class="d-flex justify-content-center ">
+                <div class="col-4">
+                  <a href="https://github.com/JJAS-DEV/DragonBall" target="_blank"
+                    class="btn btn-success btn-sm custom-btn">
+                    <i class="fab fa-github me-2"></i> repository
+                  </a>
+                </div>
+                <div class="col-4">
+                  <a href="https://jjas-dev.github.io/DragonBall/" target="_blank"
+                    class="btn btn-primary btn-sm custom-btn">
+                    <i class="fas fa-play me-2"></i> ver demo
+                  </a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Bloque de fotos a la derecha -->
+          <div class="col-md-6">
+            <div class="container text-center my-4">
+              <div class="card shadow bg-dark text-light">
+                <div class="featured">
+                  <img [src]="proyecto3[0].thumb" [alt]="proyecto3[0].caption" (click)="open(0, proyecto3)"
+                    class="card-img-top img-fluid mx-auto d-block" />
+                </div>
+
+                <div class="card-body">
+                  <div class="container text-center mt-4">
+                    <div class="row justify-content-center">
+                      <div class="col-2">
+                        <i class="fab fa-angular fa-sm"></i><br>
+                      </div>
+                      <div class="col-2">
+                        <i class="fab fa-js fa-sm"></i><br>
+                      </div>
+                      <div class="col-2">
+                        <i class="fas fa-database fa-sm"></i><br>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        
+        </div>
+      </div>
+
+      <hr class="my-5 border-light" style="height: 4px; opacity: 1;">
+
+  <div class="alert alert-info d-flex align-items-center" role="alert">
+            <i class="fas fa-spinner fa-spin me-2"></i>
+            <strong> Este portafolio está en constante evolución. Pronto se sumarán nuevos proyectos</strong>
+          </div>
 
     </div>
 
@@ -315,7 +389,7 @@
 
   </div>
   <!--Certificados -->
-  <app-certificados/>
+  <app-certificados />
 
 
   <button class="btn btn-outline-success position-fixed bottom-0 end-0 m-3 shadow rounded-pill"
