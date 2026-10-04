@@ -30,9 +30,17 @@ export const certificados: certificado[] = [{
 },
 {
     id: 3,
-    nombre: "GIT+GitHub: Todo unsistema de control de versiones de cero",
+    nombre: "GIT+GitHub: sistema de control de versiones de cero",
     fecha: "junio 2026",
     image: "certificados/certificado-git.jpg",
     url: "https://ude.my/UC-e02154e5-61e3-440f-a5b0-e6d02074fde3"
+},
+{
+    id: 4,
+    nombre: "Angular & Spring Boot:Creando Webapp Full Stack",
+    fecha: "octubre 2026",
+    image: "certificados/certificado-spring-boot-angular.jpg",
+    url: "https://ude.my/UC-cfcdda50-d9ae-403c-9195-1b8f885cdb57"
 }
+
 ]
